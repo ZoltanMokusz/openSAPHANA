@@ -1,6 +1,6 @@
 ID: openSAPHANA
 _schema-version: '2.1'
-version: 0.0.3
+version: 0.0.4
 modules:
   - name: db
     type: hdb
@@ -123,3 +123,5 @@ resources:
       service: sapui5_sb
       service-plan: sapui5-1.52
 copyright: Zoltan Mokusz
+description: 'openSAPHANA7 '
+provider: Thomas Jung

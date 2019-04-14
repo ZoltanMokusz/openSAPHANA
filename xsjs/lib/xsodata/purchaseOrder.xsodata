@@ -1,6 +1,15 @@
 service {
+	scopes (
+		create ( "Create" ),
+		read ( "Display" ),
+		update ( "Edit" ),
+		delete ( "Delete" ),
+		debug ( "Display" )
+	);
+	
     "PurchaseOrder.Header" 
-	  as "POHeader" navigates ("Items" as "POItem");
+	  as "POHeader" navigates ("Items" as "POItem")
+	  create using "xsjs:poExits.xsjslib::po_create";
 	  
 	"PurchaseOrder.Item" 
 	  as "POItem";
