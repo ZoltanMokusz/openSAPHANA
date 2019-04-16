@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="core.models::SALES_OVERVIEW_WO_CURR_CONV_OPT" applyPrivilegeType="NONE" dataCategory="CUBE" dimensionType="" schemaVersion="3.0" defaultClient="$$client$$" calculationScenarioType="TREE_BASED" enforceSqlExecution="false">
-<descriptions defaultDescription="SALES_OVERVIEW_WO_CURR_CONV_OPT"/>
+<descriptions defaultDescription="SALES_OVERVIEW_WO_CURR_CONV_OPT">
+  <comment text="Sales Overview "/>
+</descriptions>
 <localVariables/>
 <variableMappings/>
 <dataSources>
@@ -188,12 +190,14 @@
 <layout>
   <shapes>
     <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
-      <upperLeftCorner x="40" y="85"/>
+      <upperLeftCorner x="92" y="112"/>
+    
+      <rectangleSize width="160"/>
     </shape>
   
     <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
-      <upperLeftCorner x="100" y="273"/>
-      <rectangleSize height="30" width="140"/>
+      <upperLeftCorner x="92" y="232"/>
+      <rectangleSize height="30" width="160"/>
     </shape>
     <shape modelObjectName="SO.Header" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
       <upperLeftCorner x="20" y="30"/>
